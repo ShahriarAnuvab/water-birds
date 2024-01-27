@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Try Taliwindcss</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <header>
+      <!-- Top -->
+      <div
+        class="bg-gradient-to-r from-cyan-500 to-blue-500 flex flex-col xl:flex-row justify-around items-center py-2 px-2"
+      >
+        <!-- First Part -->
+        <div class="flex flex-col lg:flex-row items-center gap-3 my-2">
+          <div class="text-white flex items-center gap-1">
+            <i class="fa-regular fa-envelope"> </i>
+            <p>info@waterbirdsbd.com</p>
+          </div>
+          <div class="text-white flex items-center gap-1">
+            <i class="fa-solid fa-phone-volume"></i>
+            <p>+880 1810 033 314</p>
+          </div>
+          <div class="text-white flex md:items-center gap-1 md:gap-1">
+            <i class="fa-solid fa-location-dot"></i>
+            <p class="text-center">
+              House B/113, Mosque Road, Mohakhali DOHS, Dhaka-1206
+            </p>
+          </div>
+        </div>
+
+        <!-- Second Part -->
+        <div
+          class="flex flex-col xl:flex-row justify-between items-center gap-2 my-2"
+        >
+          <div>
+            <button
+              class="btn btn-sm border-white hover:text-blue-600 text-white outline-none bg-transparent hover:bg-transparent"
+            >
+              Accent
+            </button>
+            <button
+              class="btn btn-sm border-white hover:text-blue-600 text-white outline-none bg-transparent hover:bg-transparent"
+            >
+              Support
+            </button>
+            <button
+              class="btn btn-sm border-white hover:text-blue-600 text-white outline-none bg-transparent hover:bg-transparent"
+            >
+              FAQ
+            </button>
+          </div>
+          <div class="flex justify-center items-center gap-2">
+            <div
+              class="w-8 h-8 rounded-full border-2 flex items-center justify-center bg-white border-[#11b0e6]"
+            >
+              <i class="fa-brands fa-facebook-f text-[#11b0e6]"></i>
+            </div>
+            <div
+              class="w-8 h-8 rounded-full border-2 flex items-center justify-center bg-white border-[#11b0e6]"
+            >
+              <i class="fa-brands fa-instagram text-[#11b0e6]"></i>
+            </div>
+            <div
+              class="w-8 h-8 rounded-full border-2 flex items-center justify-center bg-white border-[#11b0e6]"
+            >
+              <i class="fa-brands fa-youtube text-[#11b0e6]"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navbar -->
+      <nav>
+        <div>
+          <div
+            class="bg-base-100 lg:flex lg:justify-center lg:items-center lg:my-4"
+          >
+            <div class="">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16"
+                    />
+                  </svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 font-semibold z-10"
+                >
+                  <li><a>Home</a></li>
+                  <li><a>About Us</a></li>
+                  <li>
+                    <a>Projects</a>
+                    <ul class="p-2">
+                      <li class="border-b-2 border-black">
+                        <a>Completed Projects</a>
+                      </li>
+                      <li class="border-b-2 border-black">
+                        <a>Ongoing Projects</a>
+                      </li>
+                      <li class="border-b-2 border-black">
+                        <a>Upcoming Projects</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li><a>Products</a></li>
+                  <li><a>Blogs</a></li>
+                  <li><a>Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+            <div>
+              <img
+                src="https://waterbirdsbd.com/frontend/assets/img/waterbird/wbbd250.png"
+                alt=""
+                class="hidden lg:block"
+              />
+            </div>
+            <div class="hidden lg:flex">
+              <ul class="menu menu-horizontal px-1 text-lg font-bold z-10">
+                <li><a>Home</a></li>
+                <li><a>About Us</a></li>
+                <li>
+                  <details>
+                    <summary>Projects</summary>
+                    <ul class="p-2">
+                      <li class="border-b-2 border-black">
+                        <a>Completed Projects</a>
+                      </li>
+                      <li class="border-b-2 border-black">
+                        <a>Ongoing Projects</a>
+                      </li>
+                      <li class="border-b-2 border-black">
+                        <a>Upcoming Projects</a>
+                      </li>
+                    </ul>
+                  </details>
+                </li>
+                <li><a>Products</a></li>
+                <li><a>Blogs</a></li>
+                <li><a>Contact Us</a></li>
+              </ul>
+            </div>
+            <div>
+              <!-- Something -->
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Carousel -->
+      <div class="carousel w-full">
+        <div id="slide1" class="carousel-item relative w-full">
+          <img
+            src="https://daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.jpg"
+            class="w-full"
+          />
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+          >
+            <a href="#slide4" class="btn btn-circle">❮</a>
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide2" class="carousel-item relative w-full">
+          <img
+            src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg"
+            class="w-full"
+          />
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+          >
+            <a href="#slide1" class="btn btn-circle">❮</a>
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide3" class="carousel-item relative w-full">
+          <img
+            src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg"
+            class="w-full"
+          />
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+          >
+            <a href="#slide2" class="btn btn-circle">❮</a>
+            <a href="#slide4" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide4" class="carousel-item relative w-full">
+          <img
+            src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg"
+            class="w-full"
+          />
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+          >
+            <a href="#slide3" class="btn btn-circle">❮</a>
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <svg
+          class="waves"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 24 150 28"
+          preserveAspectRatio="none"
+          shape-rendering="auto"
+        >
+          <defs>
+            <path
+              id="gentle-wave"
+              d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+            ></path>
+          </defs>
+          <g class="parallax">
+            <use
+              xlink:href="#gentle-wave"
+              x="48"
+              y="5"
+              fill="rgba(147,215,175,0)"
+            ></use>
+            <use
+              xlink:href="#gentle-wave"
+              x="48"
+              y="5"
+              fill="rgba(147,215,175,0)"
+            ></use>
+            <use
+              xlink:href="#gentle-wave"
+              x="48"
+              y="5"
+              fill="rgba(147,215,175,0)"
+            ></use>
+            <use xlink:href="#gentle-wave" x="100" y="0" fill="#e9f7ef"></use>
+          </g>
+        </svg>
+        <div class="bg-[#e9f7ef]">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path
+              fill="#0099ff"
+              fill-opacity="0.3"
+              d="M0,96L40,106.7C80,117,160,139,240,122.7C320,107,400,53,480,58.7C560,64,640,128,720,133.3C800,139,880,85,960,80C1040,75,1120,117,1200,138.7C1280,160,1360,160,1400,160L1440,160L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"
+            ></path>
+          </svg>
+          <h1>hello</h1>
+        </div>
+      </div>
+
+      <!-- <div>
+            <div class=" inset-x-0 top-0 h-20 pointer-events-none">
+                <svg class="absolute inset-x-0 bottom-0 h-full w-full" viewBox="0 0 1440 320"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#e9f7ef" fill-opacity="1"
+                        d="M0,224L48,197.3C96,171,192,117,288,117.3C384,117,480,171,576,186.7C672,203,768,181,864,144C960,107,1056,53,1152,48C1248,43,1344,85,1392,106.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                    </path>
+                </svg>
+
+            </div> -->
+    </main>
+  </body>
+</html>
